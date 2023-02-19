@@ -6,14 +6,3 @@ resource "aws_vpc" "main" {
     Name = "main"
   }
 }
-
-
-
-
-data "aws_nat_gateway" "default" {
-  subnet_id = aws_subnet.public.id
-
-  tags = {
-    Name = "gw NAT"
-  }
-}
