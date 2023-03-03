@@ -14,15 +14,4 @@ data "aws_route" "route" {
 }
 
 data "aws_network_interface" "interface" {
-  id = data.aws_route.route.network_interface_id
-}
---
----
---
---
-
-
--
-\-
--
----
+ 
