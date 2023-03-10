@@ -11,7 +11,14 @@ data "aws_route_table" "selected" {
 data "aws_route" "route" {
   route_table_id         = aws_route_table.selected.id
   destination_cidr_block = "10.0.1.0/24"
-}
+  
 
-data "aws_network_interface" "interface" {
- 
+data "aws_route" "route" {
+  route_table_id         = aws_route_table.selected.id
+  destination_cidr_block = "10.0.1.0/24"
+  
+  
+
+data "aws_route" "route" {
+  route_table_id         = aws_route_table.selected.id
+  destination_cidr_block = "10.0.1.0/24"
