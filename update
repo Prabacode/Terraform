@@ -10,6 +10,3 @@ data "aws_route" "route" {
   
 
 data "aws_route" "route" {
-  route_table_id         = aws_route_table.selected.id
-  destination_cidr_block = "10.0.1.0/24"
- 
